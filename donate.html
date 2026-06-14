@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate — Art for Ukraine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Art for Ukraine</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="donate.html" class="active">Donate</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <div class="section-header">
+      <h2>Support the Cause</h2>
+      <div class="stripe"></div>
+      <p>
+        Can't purchase a painting right now? A direct donation helps just as much.
+        100% of funds go to the family.
+      </p>
+    </div>
+
+    <div class="donate-section">
+
+      <div class="donate-card">
+        <h3>PayPal</h3>
+        <p>
+          Make a one-time or recurring donation securely through PayPal.
+        </p>
+        <a href="#" class="btn btn-yellow">Donate via PayPal</a>
+        <br />
+        <span class="placeholder-note">PayPal link coming soon</span>
+      </div>
+
+      <div class="donate-card">
+        <h3>Venmo</h3>
+        <p>
+          Send any amount easily through Venmo.
+        </p>
+        <a href="#" class="btn btn-yellow">Donate via Venmo</a>
+        <br />
+        <span class="placeholder-note">Venmo handle coming soon</span>
+      </div>
+
+      <div class="donate-card">
+        <h3>Other Ways to Help</h3>
+        <p>
+          Share this site with friends and family. Every share brings more eyes to the gallery
+          and more support to the family in Ukraine.
+        </p>
+        <a href="#" class="btn" onclick="copyLink(event)">Copy Page Link</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    All proceeds go directly to a family in Ukraine &nbsp;|&nbsp; <span>🇺🇦</span>
+  </footer>
+
+  <script>
+    function copyLink(e) {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin).then(() => {
+        const btn = e.target;
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Page Link', 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
