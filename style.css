@@ -389,3 +389,109 @@ footer span {
     padding: 1rem 1.5rem 3rem;
   }
 }
+
+/* ===========================
+   Set Highlight (Gallery)
+   =========================== */
+.set-highlight {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  padding: 0 3rem;
+}
+
+.set-image {
+  flex: 1;
+  min-width: 0;
+}
+
+.set-image img {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+}
+
+.set-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.set-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.set-info h3 {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.set-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .set-highlight {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+}
+
+/* ===========================
+   Artist Photo Blocks (About)
+   =========================== */
+.artist-photo-block {
+  margin: 2rem 0;
+}
+
+.artist-photo-block img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #e8e8e8;
+  display: block;
+}
+
+.photo-caption {
+  font-family: var(--font-main);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
+  padding: 0.75rem 1.5rem;
+  background: var(--light-gray);
+  border-left: 3px solid var(--yellow);
+  line-height: 1.6;
+}
+
+/* ===========================
+   Blockquote
+   =========================== */
+blockquote {
+  border-left: 3px solid var(--yellow);
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--light-gray);
+  font-family: var(--font-main);
+  font-style: italic;
+  color: var(--dark);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  color: var(--text-muted);
+}
